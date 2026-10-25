@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Braiding Style | Check Out</title>
+
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html" class="brand">
+
+        <img src="images/logo.jpg"
+             alt="Braiding Style Logo">
+
+        <span>Braiding Style</span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="reservation.html">
+            Reservation
+        </a>
+
+        <a href="checkout.html" class="active">
+            Check Out
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="checkout-box">
+
+        <p class="small-title">
+            REVIEW YOUR RESERVATION
+        </p>
+
+        <h1>
+            Check Out
+        </h1>
+
+
+        <div class="summary">
+
+            <div>
+                <span>Name</span>
+                <strong id="name">—</strong>
+            </div>
+
+            <div>
+                <span>Email / Phone</span>
+                <strong id="contact">—</strong>
+            </div>
+
+            <div>
+                <span>Braid Style</span>
+                <strong id="style">—</strong>
+            </div>
+
+            <div>
+                <span>Date</span>
+                <strong id="date">—</strong>
+            </div>
+
+            <div>
+                <span>Time</span>
+                <strong id="time">—</strong>
+            </div>
+
+        </div>
+
+
+        <p class="note">
+
+            This reservation is a request.
+            The final price may vary depending on
+            hair length, thickness, materials,
+            and selected style.
+
+        </p>
+
+
+        <button id="confirm">
+            Confirm Reservation
+        </button>
+
+
+        <div id="success" hidden>
+
+            <h2>
+                ✓ Reservation Confirmed
+            </h2>
+
+            <p>
+                Thank you for choosing
+                Braiding Style!
+            </p>
+
+            <a href="login.html">
+                Back to Login
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<div id="customModal" class="custom-modal">
+    <div class="modal-content">
+        <h2>✓ Reservation Confirmed</h2>
+        <p>Thank you for choosing Braiding Style!</p>
+        <button id="modalCloseBtn" class="modal-btn">OK</button>
+    </div>
+</div>
+
+
+<footer>
+    © 2026 Braiding Style
+</footer>
+
+
+
+<script src="script.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById("name").textContent = params.get("name") || "—";
+document.getElementById("contact").textContent = params.get("contact") || "—";
+document.getElementById("style").textContent = params.get("style") || "—";
+document.getElementById("date").textContent = params.get("date") || "—";
+document.getElementById("time").textContent = params.get("time") || "—";
+</script>
+
+</body>
+
+</html>

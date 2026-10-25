@@ -1,0 +1,669 @@
+/* =========================================================
+   GENERAL / BASIC SETTINGS
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F8F3EC;
+    color: #3E3028;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px 6%;
+
+    background: #F8F3EC;
+
+    border-bottom: 1px solid #C8A27A;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #3E3028;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.brand img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+nav {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+nav a {
+    color: #3E3028;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #C8A27A;
+}
+
+/* =========================================================
+   SEARCH BAR
+   ========================================================= */
+
+.top-search {
+    width: 100%;
+    padding: 15px 6%;
+    background: #F8F3EC;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+    width: 400px;
+    height: 40px;
+    margin-left: 0; /* Ensures no left margin offsets it */
+
+    display: flex;
+    align-items: center;
+
+    border: 2px solid #C8A27A;
+    border-radius: 25px;
+
+    background: #FFF8EF;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 8px rgba(62, 48, 40, 0.10);
+}
+
+/* SEARCH ICON */
+
+.search-icon {
+    padding-left: 15px;
+    padding-right: 5px;
+
+    color: #A97845;
+
+    font-size: 20px;
+}
+
+
+/* SEARCH INPUT */
+
+.search-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 10px;
+
+    font-size: 14px;
+
+    color: #3E3028;
+}
+
+.search-box input::placeholder {
+    color: #A97845;
+}
+
+
+/* SEARCH BUTTON */
+
+.search-box button {
+    height: 100%;
+
+    padding: 0 20px;
+
+    border: none;
+
+    background: #C8A27A;
+
+    color: #3E3028;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #A97845;
+
+    color: #FFF8EF;
+}
+
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 30px 6%;
+}
+
+
+/* =========================================================
+   CENTER HERO TO VIDEO CONTENT WRAPPER
+   ========================================================= */
+
+.center-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+    min-height: 550px;
+
+    text-align: left;
+}
+
+.hero-text {
+    padding: 20px 0;
+}
+
+.small-title {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 70px);
+
+    line-height: 1;
+
+    margin: 15px 0 20px;
+}
+
+.hero p {
+    line-height: 1.7;
+
+    max-width: 550px;
+}
+
+.hero > img {
+    width: 100%;
+
+    height: 480px;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+    
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 20px;
+
+    border-radius: 22px;
+
+    background: #C8A27A;
+
+    color: #3E3028;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   ABOUT US
+   ========================================================= */
+
+.about {
+    text-align: center;
+
+    padding: 70px 10%;
+
+    border-top: 1px solid #C8A27A;
+
+    border-bottom: 1px solid #C8A27A;
+}
+
+.about p:last-child {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   🎥 VIDEO SECTION
+   ========================================================= */
+
+.video-section {
+    width: 100%;
+
+    padding: 45px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* VIDEO FRAME */
+
+.video-section video {
+    width: 100%;
+
+    max-width: 1100px;
+
+    height: 550px;
+
+    object-fit: cover;
+
+    /* AESTHETIC BORDER */
+    border: 5px solid #C8A27A;
+
+    border-radius: 28px;
+
+    padding: 8px;
+
+    background: #FFF8EF;
+
+    /* SOFT SHADOW */
+    box-shadow:
+        0 8px 20px rgba(62, 48, 40, 0.15),
+        0 0 0 1px #E8D5BE;
+
+    display: block;
+}
+
+
+/* =========================================================
+   BRAID STYLES SECTION
+   ========================================================= */
+
+.styles {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+
+    margin: 8px 0;
+}
+
+
+/* =========================================================
+   BRAID GRID
+   ========================================================= */
+
+.braid-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   BRAID CARD
+   ========================================================= */
+
+.braid-card {
+    overflow: hidden;
+
+    border: 1px solid #C8A27A;
+
+    border-radius: 20px;
+
+    background: #F8F3EC;
+}
+
+.braid-card img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.braid-card div {
+    padding: 18px;
+}
+
+.braid-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+}
+
+.braid-card p {
+    min-height: 60px;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+.braid-card strong {
+    display: block;
+
+    margin: 15px 0;
+
+    font-size: 17px;
+}
+
+.braid-card a {
+    display: block;
+
+    text-align: center;
+
+    padding: 11px;
+
+    border-radius: 12px;
+
+    background: #C8A27A;
+
+    color: #3E3028;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.braid-card a:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   ⭐ CUSTOMER RATINGS & COMMENTS
+   ========================================================= */
+
+.reviews-section {
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+.reviews-section h2 {
+    margin-bottom: 10px;
+}
+
+
+/* REVIEW FORM */
+
+.review-form {
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background-color: #F5E6D3;
+
+    border-radius: 15px;
+
+    border: 1px solid #C8A27A;
+}
+
+.review-form label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+/* NAME INPUT AND COMMENT BOX */
+
+.review-form input[type="text"],
+.review-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #C8A27A;
+
+    border-radius: 8px;
+
+    background: #FFFDF9;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+
+/* =========================================================
+   ⭐ STAR RATING
+   ========================================================= */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+
+/* STAR INPUT */
+
+.rating input {
+    display: none;
+}
+
+
+/* STAR DESIGN */
+
+.rating label {
+    font-size: 35px;
+
+    color: #C8A27A;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* STAR HOVER & SELECTED */
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #A97845;
+}
+
+
+/* =========================================================
+   REVIEW SUBMIT BUTTON
+   ========================================================= */
+
+.review-form button {
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    background: #C8A27A;
+
+    color: #3E3028;
+}
+
+.review-form button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 28px;
+
+    border-top: 1px solid #C8A27A;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   📱 TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .braid-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   📱 PHONE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero > img {
+        height: 350px;
+    }
+
+    /* VIDEO ON PHONE */
+
+    .video-section {
+        padding: 30px 0;
+    }
+
+    .video-section video {
+        width: 100%;
+
+        height: 300px;
+
+        border-width: 3px;
+
+        border-radius: 20px;
+
+        padding: 5px;
+    }
+
+    .braid-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

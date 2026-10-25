@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Braiding Style | Reservation</title>
+
+    <link rel="stylesheet" href="reservation.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html" class="brand">
+
+        <img src="images/logo.jpg"
+             alt="Braiding Style Logo">
+
+        <span>Braiding Style</span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="reservation.html" class="active">
+            Reservation
+        </a>
+
+        <a href="checkout.html">
+            Check Out
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="reservation-intro">
+
+        <p class="small-title">
+            BOOK YOUR APPOINTMENT
+        </p>
+
+        <h1>
+            Choose Your Style
+        </h1>
+
+        <p>
+            Select a braid style below and fill out
+            your reservation details.
+        </p>
+
+    </section>
+
+
+    <section class="reservation-styles">
+
+        <div class="braid-grid">
+
+
+            <article class="braid-card">
+
+                <img src="images/island.jpg"
+                     alt="Island Braids">
+
+                <h2>Island Braids</h2>
+
+                <strong>₱800</strong>
+
+                <button onclick="selectStyle('Island Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/knotless.jpg"
+                     alt="Knotless Braids">
+
+                <h2>Knotless Braids</h2>
+
+                <strong>₱900</strong>
+
+                <button onclick="selectStyle('Knotless Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/mermaid.jpg"
+                     alt="Mermaid Braids">
+
+                <h2>Mermaid Braids</h2>
+
+                <strong>₱1,000</strong>
+
+                <button onclick="selectStyle('Mermaid Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/dreads.jpg"
+                     alt="Dreads">
+
+                <h2>Dreads</h2>
+
+                <strong>₱1,000</strong>
+
+                <button onclick="selectStyle('Dreads')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/goddess.jpg"
+                     alt="Goddess Braids">
+
+                <h2>Goddess Braids</h2>
+
+                <strong>₱1,100</strong>
+
+                <button onclick="selectStyle('Goddess Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/invisible.jpg"
+                     alt="Invisible Locs">
+
+                <h2>Invisible Locs</h2>
+
+                <strong>₱900</strong>
+
+                <button onclick="selectStyle('Invisible Locs')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/tyla.jpg"
+                     alt="Tyla Braids">
+
+                <h2>Tyla Braids</h2>
+
+                <strong>₱1,000</strong>
+
+                <button onclick="selectStyle('Tyla Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/fulani.jpg"
+                     alt="Fulani Braids">
+
+                <h2>Fulani Braids</h2>
+
+                <strong>₱1,100</strong>
+
+                <button onclick="selectStyle('Fulani Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/kinky.jpg"
+                     alt="Kinky Braids">
+
+                <h2>Kinky Braids</h2>
+
+                <strong>₱850</strong>
+
+                <button onclick="selectStyle('Kinky Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/short twist.jpg"
+                     alt="Short Twists">
+
+                <h2>Short Twists</h2>
+
+                <strong>₱700</strong>
+
+                <button onclick="selectStyle('Short Twists')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/french.jpg"
+                     alt="French Curls">
+
+                <h2>French Curls</h2>
+
+                <strong>₱1,000</strong>
+
+                <button onclick="selectStyle('French Curls')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/passion.jpg"
+                     alt="Passion Twists">
+
+                <h2>Passion Twists</h2>
+
+                <strong>₱900</strong>
+
+                <button onclick="selectStyle('Passion Twists')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/large.jpg"
+                     alt="Large Braids">
+
+                <h2>Large Braids</h2>
+
+                <strong>₱800</strong>
+
+                <button onclick="selectStyle('Large Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/beaded.jpg"
+                     alt="Beaded Braids">
+
+                <h2>Beaded Braids</h2>
+
+                <strong>₱950</strong>
+
+                <button onclick="selectStyle('Beaded Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/boho.jpg"
+                     alt="Boho Braids">
+
+                <h2>Boho Braids</h2>
+
+                <strong>₱1,100</strong>
+
+                <button onclick="selectStyle('Boho Braids')">
+                    Select
+                </button>
+
+            </article>
+
+
+            <article class="braid-card">
+
+                <img src="images/pikaboo.jpg"
+                     alt="Pikaboo Braids">
+
+                <h2>Pikaboo Braids</h2>
+
+                <strong>₱950</strong>
+
+                <button onclick="selectStyle('Pikaboo Braids')">
+                    Select
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="form-section">
+
+        <h2>
+            Reservation Details
+        </h2>
+
+        <form action="checkout.html">
+
+            <label>
+                Name
+            </label>
+
+            <input
+                type="text"
+                name="name"
+                required
+            >
+
+
+            <label>
+                Email or Phone Number
+            </label>
+
+            <input
+                type="text"
+                name="contact"
+                required
+            >
+
+
+            <label>
+                Selected Braid
+            </label>
+
+            <input
+                type="text"
+                id="selectedStyle"
+                name="style"
+                readonly
+                required
+                placeholder="Choose a braid above"
+            >
+
+
+            <label>
+                Preferred Date
+            </label>
+
+            <input
+                type="date"
+                name="date"
+                required
+            >
+
+
+            <label>
+                Preferred Time
+            </label>
+
+            <input
+                type="time"
+                name="time"
+                required
+            >
+
+
+            <label>
+                Additional Notes
+            </label>
+
+            <textarea
+                name="notes"
+                rows="4"
+                placeholder="Optional"
+            ></textarea>
+
+
+            <button type="submit">
+                Continue to Check Out
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    © 2026 Braiding Style
+
+</footer>
+
+
+<script>
+
+function selectStyle(style) {
+
+    document.getElementById("selectedStyle").value = style;
+
+    document.querySelector(".form-section")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+const params =
+    new URLSearchParams(window.location.search);
+
+const style =
+    params.get("style");
+
+if (style) {
+
+    document.getElementById("selectedStyle").value =
+        style;
+
+}
+
+</script>
+
+</body>
+
+</html>
